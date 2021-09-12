@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(55, 55, 56);
+}
+
+#start {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    margin-top: 40vh;
+    line-height: .15em;
+}
+
+#start h1 {
+    font-size: 4em;
+}
+
+#start p {
+    font-size: 2em;
+}
