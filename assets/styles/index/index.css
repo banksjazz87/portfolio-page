@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(55, 55, 56);
+    background-color: #11151c;
 }
 
 #start {
@@ -10,7 +10,7 @@ body {
     justify-items: center;
     color: white;
     margin-top: 40vh;
-    line-height: .15em;
+    line-height: .05em;
 }
 
 #start h1 {
@@ -19,4 +19,5 @@ body {
 
 #start p {
     font-size: 2em;
+    font-style: oblique;
 }
