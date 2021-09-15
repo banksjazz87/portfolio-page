@@ -1,6 +1,7 @@
 body {
     background-color: #11151c;
     color: white;
+    width: 100vw;
 }
 
 navbar {
@@ -65,4 +66,49 @@ navbar {
 #opening_screen p {
     font-size: 2em;
     font-style: oblique;
+}
+
+#profile_pic {
+    grid-area: pic;
+    height: 22em;
+    width: 22em;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#about_me {
+    grid-area: about;
+}
+
+#about_me_text {
+    grid-area: about_text;
+    margin-top: 0;
+    padding-top: 0;
+    margin-right: 2em;
+}
+
+#technical_skills {
+    grid-area: skills;
+}
+
+#technical_skills_list {
+    grid-area: skills_list;
+}
+
+#certificates {
+    grid-area: certificates;
+}
+
+#certificate_items {
+    grid-area: certificate_items;
+}
+
+#side_column {
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "pic about" "pic about_text" "pic skills" "pic skills-list" "pic certificates" "pic certificate_items";
+    width: 90vw;
+    margin-right: auto;
+    margin-bottom: 2em;
 }
