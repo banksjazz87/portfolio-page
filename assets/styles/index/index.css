@@ -7,12 +7,10 @@ body {
 navbar {
     width: 100vw;
     height: 2.25em;
-    background-color: red;
     margin-top: 0;
     position: fixed;
     top: 0;
     left: 0;
-    opacity: .7;
 }
 
 #menu_container {
@@ -23,6 +21,7 @@ navbar {
     padding: .17em .2em .17em .2em;
     width: 3em;
     margin-bottom: 2em;
+    margin-top: .2em;
 }
 
 .dash {
@@ -38,25 +37,20 @@ navbar {
 #opening_screen {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-items: center;
+    justify-content: space-evenly;
     color: white;
-    margin-top: 40vh;
     line-height: .05em;
     height: 100vh;
     width: 100vw;
 }
 
-navbar {
-    width: 100vw;
-    height: 2em;
-    background-color: red;
-    margin-top: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: .7;
+#opening_text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #opening_screen h1 {
@@ -69,46 +63,20 @@ navbar {
 }
 
 #profile_pic {
-    grid-area: pic;
-    height: 22em;
-    width: 22em;
-    border-radius: 50%;
-    margin: auto;
-}
-
-#about_me {
-    grid-area: about;
-}
-
-#about_me_text {
-    grid-area: about_text;
-    margin-top: 0;
-    padding-top: 0;
-    margin-right: 2em;
-}
-
-#technical_skills {
-    grid-area: skills;
-}
-
-#technical_skills_list {
-    grid-area: skills_list;
-}
-
-#certificates {
-    grid-area: certificates;
-}
-
-#certificate_items {
-    grid-area: certificate_items;
+    height: 20em;
+    width: 20em;
 }
 
 #side_column {
-    display: grid;
-    grid-template-columns: 45vw 45vw;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "pic about" "pic about_text" "pic skills" "pic skills-list" "pic certificates" "pic certificate_items";
-    width: 90vw;
-    margin-right: auto;
-    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+#technical_skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
