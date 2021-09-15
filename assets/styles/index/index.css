@@ -18,10 +18,11 @@ navbar {
     border-color: white;
     border-width: .15em;
     border-radius: 7%;
-    padding: .17em .2em .17em .2em;
+    padding: .2em .2em .2em .2em;
     width: 3em;
     margin-bottom: 2em;
     margin-top: .2em;
+    margin-left: .2em;
 }
 
 .dash {
@@ -40,7 +41,8 @@ navbar {
     flex-direction: row;
     align-items: center;
     justify-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: center;
     color: white;
     line-height: .05em;
     height: 100vh;
@@ -51,32 +53,104 @@ navbar {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-top: 4em;
 }
 
 #opening_screen h1 {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 #opening_screen p {
-    font-size: 2em;
+    font-size: 1.5em;
     font-style: oblique;
 }
 
 #profile_pic {
     height: 20em;
     width: 20em;
+    border-radius: 10%;
 }
 
 #side_column {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
     align-content: center;
+    margin-right: 2vw ;
+    margin-left: 2vw;
 }
 
 #technical_skills {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-left: 0;
+}
+
+li{
+  list-style-type: disc;
+}
+
+.project_pic {
+  height: 12em;
+  width: 12em;
+  margin: auto;
+}
+card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: .5em .5em 1em .5em;
+  padding: .25em 1em .25em 1em;
+  /*background-color: #212d40;*/
+  border-style: solid;
+  border-width: .1em;
+  border-color:#364156;
+  border-radius: 3%;
+}
+
+card h3{
+  text-align: left;
+}
+
+card a{
+  text-decoration: none;
+  color: white;
+  padding: .3em 1em .3em 1em;
+ background-color: #d66853;
+  border-radius: 5%;
+  margin-top: .5em;
+}
+
+.project_links{
+  display: flex;
+  flex-direction: row;
+}
+
+.project_links a {
+  margin-left: 1em;
+  margin:right 1em;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background-color: #364156;
+}
+footer img{
+  height: 2em;
+  width: 2em;
+  border-radius: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  background-color: #212d40;
+  width: 100vw;
 }
