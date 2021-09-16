@@ -104,6 +104,14 @@ li {
     margin-left: 5vw;
     margin-right: 5vw;
     justify-content: space-evenly;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    border-style: solid;
+    border-width: .25em;
+    border-color: #364156;
+    border-radius: 3%;
+    background-color: #212d40;
+    padding: 1em 2em 1em 2em;
 }
 
 card {
