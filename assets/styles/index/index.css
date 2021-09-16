@@ -92,8 +92,8 @@ li {
 }
 
 .project_pic {
-    height: 20em;
-    width: 21em;
+    height: 10em;
+    width: 11em;
     margin: auto;
 }
 
@@ -104,8 +104,7 @@ li {
     margin-left: 5vw;
     margin-right: 5vw;
     justify-content: space-evenly;
-    margin-right: 5vw;
-    margin-left: 5vw;
+    align-content: center;
     border-style: solid;
     border-width: .25em;
     border-color: #364156;
@@ -114,23 +113,24 @@ li {
     padding: 1em 2em 1em 2em;
 }
 
+card{
+  flex-wrap: wrap;
+}
+
 card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin: .5em .5em 1em .5em;
     padding: .25em 1em .25em 1em;
-    border-style: solid;
-    margin-right: 5vw;
-    margin-left: 5vw;
     border-style: solid;
     border-width: .25em;
     border-color: #364156;
     border-radius: 3%;
     background-color: #212d40;
     padding: 1em 2em 1em 2em;
+    text-align: center;
 }
 
 card h3 {
