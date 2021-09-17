@@ -115,6 +115,34 @@ li {
     margin-bottom: 3em;
 }
 
+#travel_app {
+    background-image: url("/assets/images/travelApp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#sentiment_app {
+    background-image: url("/assets/images/sentimentAnalysis.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#landing_page {
+    background-image: url("/assets/images/landingPage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#timer {
+    background-image: url("/assets/images/timer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 card {
     flex-wrap: wrap;
 }
