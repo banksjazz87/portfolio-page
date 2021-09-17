@@ -1,6 +1,6 @@
 body {
     background-color: #11151c;
-    color: white;
+    color: whitesmoke;
     width: 100vw;
 }
 
@@ -43,7 +43,7 @@ navbar {
     justify-items: center;
     justify-content: space-evenly;
     align-content: center;
-    color: white;
+    color: whitesmoke;
     line-height: .05em;
     height: 100vh;
     width: 100vw;
@@ -83,7 +83,7 @@ navbar {
     border-width: .25em;
     border-color: #364156;
     border-radius: 3%;
-    background-color: #212d40;
+    /*background-color: #212d40;*/
     padding: 1em 2em 1em 2em;
 }
 
@@ -92,8 +92,8 @@ li {
 }
 
 .project_pic {
-    height: 10em;
-    width: 11em;
+    height: 30vh;
+    width: 60vw;
     margin: auto;
     border-radius: 5%;
 }
@@ -105,14 +105,15 @@ li {
     margin-left: 5vw;
     margin-right: 5vw;
     justify-content: space-evenly;
-    /*align-content: center;*/
+    align-content: center;
     border-style: solid;
     border-width: .25em;
     border-color: #364156;
     border-radius: 3%;
-    background-color: #212d40;
+   /* background-color: #212d40;*/
     padding: 1em 2em 1em 2em;
     margin-top: 1em;
+    margin-bottom: 3em;
 }
 
 card {
@@ -120,7 +121,7 @@ card {
 }
 
 .card_title {
-    font-size: 1.7em;
+    font-size: 1.5em;
     margin-top: .2em;
 }
 
@@ -132,10 +133,10 @@ card {
     justify-content: space-around;
     padding: .25em 1em .25em 1em;
     border-style: solid;
-    border-width: .25em;
+    border-width: .15em;
     border-color: #364156;
     border-radius: 3%;
-    background-color: #212d40;
+   /* background-color: #212d40;*/
     padding: 1em 2em 1em 2em;
     text-align: center;
     margin-top: 1em;
@@ -166,9 +167,12 @@ card a {
     flex-direction: row;
 }
 
-.project_links a {
-    margin-left: 1em;
-    margin: right 1em;
+.webpage{
+  margin-right: .2em;
+}
+
+.github{
+  margin-left: .2em;
 }
 
 footer {
@@ -178,17 +182,45 @@ footer {
     justify-content: center;
     align-content: center;
     text-align: center;
-    background-color: #364156;
+   /* background-color: #364156;*/
+    width: 100vw;
+    margin-left: 0em;
+}
+
+footer p{
+  margin-top: .2em;
+  margin-bottom: .2em;
+  left: 0;
+}
+
+#footer_text {
+  margin-bottom: 4em;
+  left: 0;
+  width: 100vw;
 }
 
 footer img {
-    height: 2em;
-    width: 2em;
+    height: 2.2em;
+    width: 2.2em;
     border-radius: 100%;
 }
 
 footer a {
     text-decoration: none;
-    background-color: #212d40;
-    width: 100vw;
+    margin-left: 1em;
+}
+
+#social_links{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  background-color: #364156;
+  justify-content: center;
 }
