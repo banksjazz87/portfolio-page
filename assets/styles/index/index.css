@@ -172,7 +172,9 @@ card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    flex-grow: 0;
     justify-content: space-around;
+    align-items: center;
     border-style: solid;
     border-width: .15em;
     border-color: #364156;
@@ -194,12 +196,18 @@ card p {
 }
 
 card a {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     text-decoration: none;
     color: white;
     padding: .3em .5em .3em .5em;
     background-color: #d66853;
     border-radius: 5%;
     margin-top: .5em;
+    padding-top: .3em;
 }
 
 .project_links {
@@ -210,10 +218,12 @@ card a {
 
 .webpage {
     margin-right: .2em;
+    margin-left: 0;
 }
 
 .github {
     margin-left: .2em;
+    margin-right: 0;
 }
 
 footer {
