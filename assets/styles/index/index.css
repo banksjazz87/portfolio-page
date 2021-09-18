@@ -196,7 +196,7 @@ card p {
 card a {
     text-decoration: none;
     color: white;
-    padding: .3em 1em .3em 1em;
+    padding: .3em .5em .3em .5em;
     background-color: #d66853;
     border-radius: 5%;
     margin-top: .5em;

@@ -7,31 +7,15 @@
     }
     #travel_app {
         grid-area: travel;
-        background-image: url("/assets/images/travelApp.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
     #sentiment_app {
         grid-area: sentiment;
-        background-image: url("/assets/images/sentimentAnalysis.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
     #landing_page {
         grid-area: landing;
-        background-image: url("/assets/images/landingPage.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
     #timer {
         grid-area: timer;
-        background-image: url("/assets/images/timer.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
     #project_container {
         display: grid;
@@ -42,5 +26,11 @@
         grid-template-rows: auto auto auto;
         grid-template-columns: auto auto;
         grid-template-areas: "header header" "travel sentiment" "landing timer";
+    }
+}
+
+@media screen and (max-width: 350px) {
+    body {
+        font-size: 14px;
     }
 }
