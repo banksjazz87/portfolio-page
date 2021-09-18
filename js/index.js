@@ -1,4 +1,4 @@
-//function to remove all of the child elements from the card elements.
+/*//function to remove all of the child elements from the card elements.
 const hideChildren = (parent, exception) => {
 
     const parents = document.querySelectorAll(parent);
@@ -12,9 +12,28 @@ const hideChildren = (parent, exception) => {
                 //parents[i].removeChild(currentItems[j]);
                 console.log(curr)
             }*/
-            console.log(currentItems);
-        }
+           // console.log(currentItems);
+       /* }
     }
 }
 
-hideChildren('card', 'a');
+hideChildren('card', 'a');*/
+
+let i = 0;
+
+const testing = () => {
+  setInterval(() => {
+  if(i < 10){
+    i++;
+    console.log(i);
+  }
+  }, 1000);
+  clearInterval(testing());
+} 
+  
+  
+
+//clearInterval(intTest);
+
+  
+testing();
