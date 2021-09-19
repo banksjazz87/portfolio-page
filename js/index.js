@@ -1,21 +1,18 @@
 //A variable to keep track of the current height of the menu_list display
 let x = 0;
-
+let show = false;
 //Function to create an effect for the menu items to dynamically appear.
 const showMenu = () => {
 
-    clearInterval(widthHeight());
+    //clearInterval(widthHeight);
     x = 0;
     let menuList = document.getElementById('menu_items');
 
-    if (menuList.style.display === "none") {
-        return () => {
-            widthHeight();
-            menuList.style.display = "flex";
-        }
+    const menuContainer = document.getElementById('menu_container');
 
-    } else {
-        return menuList.style.display = "none";
+    if (menuList.style.display === 'none') {
+        widthHeight();
+        menuList.style.display = 'flex';
     }
 }
 
@@ -28,11 +25,11 @@ const widthHeight = () => {
         if (x < 100) {
             x++;
             console.log(x);
-            return menuList.style = "height:" + x + "vh; width:" + x + "vw;";
+            menuList.style = "height:" + x + "vh; width:" + x + "vw;";
         } else {
-            console.log(x);
+            clearInterval(widthHeight);
         }
-    }, );
+    }, 5);
 }
 
 
@@ -45,21 +42,13 @@ menu.addEventListener('click', () => {
 });
 
 
-/*let i = 0;
+//This function will remove the menu dropdown that appears after the hamburger dropdown is selected.
 
-const testing = () => {
-    setInterval(() => {
-        if (i < 10) {
-            i++;
-            console.log(i);
-        }
-    }, 1000);
-    clearInterval(testing());
-}
+const body = document.querySelector('body');
 
+body.addEventListener('click', () => {
+    const menuItems = document.getElementById('menu_items');
+    clearInterval(widthHeight);
+    menuItems.style.display = 'none';
 
-
-//clearInterval(intTest);
-
-
-testing();*/
+});
