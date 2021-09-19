@@ -26,6 +26,14 @@ navbar {
     margin-left: .2em;
 }
 
+#menu_items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #d66853;
+    opacity: .9;
+}
+
 .dash {
     background-color: white;
     width: 32px;
