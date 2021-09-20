@@ -70,10 +70,10 @@ navbar {
     flex-direction: row;
     align-items: center;
     justify-items: center;
-    justify-content: space-evenly;
+   justify-content: space-evenly;
     align-content: center;
     color: whitesmoke;
-    line-height: .05em;
+    /*line-height: .05em;*/
     height: 100vh;
     width: 100vw;
 }
@@ -82,15 +82,21 @@ navbar {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 4em;
+    align-items: center;
+    margin-top: .2em;
 }
 
 #opening_screen h1 {
     font-size: 3em;
+    margin-bottom: .2em;
 }
 
 #opening_screen p {
+    flex-wrap: wrap ;
     font-size: 1.5em;
+    line-height: .25em;
+    justify-self: center;
+    margin-top: .2em;
     font-style: oblique;
 }
 
@@ -102,6 +108,7 @@ navbar {
     border-width: .25em;
     border-color: #364156;*/
     box-shadow: 3px 6px #364156;
+    margin-bottom: 32px;
 }
 
 #side_column {
@@ -129,6 +136,7 @@ li {
     margin: auto;
     border-radius: 5%;
 }
+
 
 #projects {
     display: flex;
@@ -198,6 +206,7 @@ card {
 .card_title {
     font-size: 1.5em;
     margin-top: .2em;
+    align-self: center;
 }
 
 card {
@@ -242,6 +251,30 @@ card a {
     border-radius: 5%;
     margin-top: .5em;
     padding-top: .3em;
+}
+
+card a :hover{
+  background-color: #11151c;
+  color: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #d66853;
+  text-decoration: none;
+  padding: .4em .6em .4em .6em;
+  border-radius: 5%;
+}
+
+card a :active{
+  background-color: #11151c;
+  color: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #d66853;
+  text-decoration: none;
+  padding: .4em .6em .4em .6em;
+  border-radius: 5%;
+  transform: rotate(10deg);
+  
 }
 
 .project_links {

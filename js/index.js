@@ -101,12 +101,36 @@ const scrollToSection = () => {
     const itemsParent = menuParent[0];
 
     for (let i = 0; i < itemsParent.children.length; i++) {
-        itemsParent.children[i].addEventListener('click', () => {
-            //place smooth scroll function here
-            console.log('I have been clicked');
+        itemsParent.children[i].addEventListener('click', (e) => {
+        
+            let targetId = e.target.textContent.split(" ");
+            
+            let targetElement = "";
+            
+            if(targetId.length > 1){
+              
+              targetId = targetId[0].toLowerCase();
+              
+              targetElement = document.getElementById(targetId);
+              
+              
+             targetElement.scrollIntoView({
+                behavior: "smooth"
+              })
+              
+              console.log(targetId);
+              
+            }else{
+              targetId = targetId[0].toLowerCase();
+              
+              targetElement = document.getElementById(targetId);
+              
+              targetElement.scrollIntoView({behavior: "smooth"});
+              
+              console.l
+            }
         })
     }
-
 }
 
 scrollToSection();
