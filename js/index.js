@@ -102,6 +102,7 @@ const scrollToSection = () => {
 
     for (let i = 0; i < itemsParent.children.length; i++) {
         itemsParent.children[i].addEventListener('click', () => {
+            //place smooth scroll function here
             console.log('I have been clicked');
         })
     }
