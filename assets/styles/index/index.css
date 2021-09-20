@@ -130,7 +130,7 @@ li {
     border-radius: 5%;
 }
 
-#project_container {
+#projects {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
