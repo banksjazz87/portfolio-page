@@ -5,14 +5,16 @@ let show = false;
 const showMenu = () => {
 
     //clearInterval(widthHeight);
-    x = 0;
     let menuList = document.getElementById('menu_items');
 
     const menuContainer = document.getElementById('menu_container');
 
     if (menuList.style.display === 'none') {
+        x = 0;
         widthHeight();
         menuList.style.display = 'flex';
+    } else {
+        menuList.style.display = 'none';
     }
 }
 
@@ -25,7 +27,7 @@ const widthHeight = () => {
         if (x < 100) {
             x++;
             console.log(x);
-            menuList.style = "height:" + x + "vh; width:" + x + "vw;";
+            menuList.style = "width:" + x + "vw;";
         } else {
             clearInterval(widthHeight);
         }
