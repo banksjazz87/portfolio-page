@@ -70,7 +70,7 @@ navbar {
     flex-direction: row;
     align-items: center;
     justify-items: center;
-   justify-content: space-evenly;
+    justify-content: space-evenly;
     align-content: center;
     color: whitesmoke;
     /*line-height: .05em;*/
@@ -92,7 +92,7 @@ navbar {
 }
 
 #opening_screen p {
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     font-size: 1.5em;
     line-height: .25em;
     justify-self: center;
@@ -136,7 +136,6 @@ li {
     margin: auto;
     border-radius: 5%;
 }
-
 
 #projects {
     display: flex;
@@ -253,28 +252,28 @@ card a {
     padding-top: .3em;
 }
 
-card a :hover{
-  background-color: #11151c;
-  color: white;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #d66853;
-  text-decoration: none;
-  padding: .4em .6em .4em .6em;
-  border-radius: 5%;
+card a:hover {
+    /*background-color: #364156;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #d66853;
+    border-radius: 5%;
+    border-width: .5px;
+    padding: .4em .6em .4em .6em;
+    border-radius: 5%;*/
+    box-shadow: 3px 6px #364156;
 }
 
-card a :active{
-  background-color: #11151c;
-  color: white;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #d66853;
-  text-decoration: none;
-  padding: .4em .6em .4em .6em;
-  border-radius: 5%;
-  transform: rotate(10deg);
-  
+card a :active {
+    background-color: #11151c;
+    color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #d66853;
+    text-decoration: none;
+    padding: .4em .6em .4em .6em;
+    border-radius: 5%;
+    transform: translateY(10%);
 }
 
 .project_links {
@@ -326,6 +325,19 @@ footer img {
 footer a {
     text-decoration: none;
     margin-left: 1em;
+}
+
+footer a :hover {
+    transform: translateX(5%);
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+footer a :active {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
 }
 
 #social_links {
