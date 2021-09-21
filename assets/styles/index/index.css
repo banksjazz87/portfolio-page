@@ -52,6 +52,7 @@ navbar {
 
 #menu_items li {
     list-style: none;
+    align-self: center;
 }
 
 .dash {
@@ -131,8 +132,10 @@ li {
 }
 
 .project_pic {
-    height: 14em;
-    width: 16em;
+    /*height: 14em;
+    width: 16em;*/
+    height: 50vh;
+    width: 50vw;
     margin: auto;
     border-radius: 5%;
 }
@@ -246,7 +249,7 @@ card a {
     text-decoration: none;
     color: white;
     padding: .3em .5em .3em .5em;
-    background-color: #d66853;
+    background-color: #ce452a;
     border-radius: 5%;
     margin-top: .5em;
     padding-top: .3em;
@@ -261,7 +264,9 @@ card a:hover {
     border-width: .5px;
     padding: .4em .6em .4em .6em;
     border-radius: 5%;*/
-    box-shadow: 3px 6px #364156;
+    background-color: #d66853;
+    transform: translateY(5%);
+    /*box-shadow: 3px 6px #364156;*/
 }
 
 card a :active {
@@ -317,8 +322,8 @@ footer p {
 }
 
 footer img {
-    height: 2.2em;
-    width: 2.2em;
+    height: 2em;
+    width: 2em;
     border-radius: 100%;
 }
 
@@ -328,7 +333,6 @@ footer a {
 }
 
 footer a :hover {
-    transform: translateX(5%);
     border-width: 2px;
     border-style: solid;
     border-color: white;
