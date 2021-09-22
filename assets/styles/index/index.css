@@ -42,7 +42,7 @@ navbar {
     justify-content: center;
     align-content: space-between;
     line-height: 4em;
-    font-size: 1.25em;
+    font-size: 1.5em;
     height: 100vh;
 }
 
@@ -249,7 +249,8 @@ card a {
     text-decoration: none;
     color: white;
     padding: .3em .5em .3em .5em;
-    background-color: #ce452a;
+   /*background-color: #ce452a;*/
+   background-color: #d66853;
     border-radius: 5%;
     margin-top: .5em;
     padding-top: .3em;
@@ -318,12 +319,12 @@ footer p {
 #footer_text {
     margin-bottom: 4em;
     left: 0;
-    width: 100vw;
+    width: 75vw;
 }
 
 footer img {
-    height: 2em;
-    width: 2em;
+    height: 2.1em;
+    width: 2.1em;
     border-radius: 100%;
 }
 
