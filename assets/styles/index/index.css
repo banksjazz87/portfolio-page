@@ -237,26 +237,19 @@ card a {
     text-decoration: none;
     color: white;
     padding: .3em .5em .3em .5em;
-   background-color: #d66853;
+    background-color: #d66853;
     border-radius: 5%;
     margin-top: .5em;
     padding-top: .3em;
 }
 
 card a:hover {
-    background-color: #d66853;
+    background-color: #f88a76;
     transform: translateY(5%);
+    box-shadow: 1px 3px #364156;
 }
 
 card a :active {
-    background-color: #11151c;
-    color: white;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #d66853;
-    text-decoration: none;
-    padding: .4em .6em .4em .6em;
-    border-radius: 5%;
     transform: translateY(10%);
 }
 
@@ -312,15 +305,16 @@ footer a {
 }
 
 footer a :hover {
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
-    border-color: white;
+    border-color: #364156;
 }
 
 footer a :active {
     border-width: 2px;
     border-style: solid;
     border-color: black;
+    outline: none;
 }
 
 #social_links {
@@ -336,4 +330,8 @@ footer a :active {
     width: 100vw;
     background-color: #364156;
     justify-content: center;
+}
+
+#social_links :hover {
+    opacity: .7;
 }

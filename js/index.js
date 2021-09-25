@@ -129,13 +129,3 @@ const scrollToSection = () => {
 }
 
 scrollToSection();
-
-
-
-
-
-
-
-
-
-
