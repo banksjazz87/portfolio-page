@@ -1,7 +1,6 @@
 //A variable to keep track of the current height of the menu_list display
 let x = 0;
 
-
 /**
  * @description used to create an effect for the menu items to dynamically appear.
  * @returns an updated UI
@@ -21,9 +20,8 @@ const showMenu = () => {
     }
 }
 
-
 /**
- * @description this setInterfal function will be used to create a scroll effect.
+ * @description this setInterval function will be used to create a scroll effect.
  * @returns an updated width for the menu items.
  */
 
@@ -113,7 +111,6 @@ const scrollToSection = () => {
 
                 targetElement = document.getElementById(targetId);
 
-
                 targetElement.scrollIntoView({
                     behavior: "smooth"
                 })
@@ -126,11 +123,19 @@ const scrollToSection = () => {
                 targetElement = document.getElementById(targetId);
 
                 targetElement.scrollIntoView({ behavior: "smooth" });
-
-                console.l
             }
         })
     }
 }
 
 scrollToSection();
+
+
+
+
+
+
+
+
+
+
