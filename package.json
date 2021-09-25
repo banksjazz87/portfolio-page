@@ -8,5 +8,7 @@
     },
     "author": "Chris Banks",
     "license": "ISC",
-    "dependencies": {}
+    "dependencies": {
+        "dotenv": "^10.0.0"
+    }
 }
