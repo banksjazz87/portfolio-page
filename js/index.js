@@ -9,13 +9,17 @@ let x = 0;
 const showMenu = () => {
 
     let menuList = document.getElementById('menu_items');
+    
+    let nav = document.querySelector('navbar');
 
     if (menuList.style.display === 'none') {
         x = 0;
         scrollOut();
         menuList.style.display = 'flex';
+        nav.style.opacity = '.97';
     } else {
         menuList.style.display = 'none';
+        nav.style.opacity = ".5";
 
     }
 }
@@ -76,16 +80,30 @@ menu.addEventListener('click', () => {
  * @returns hides the menu items if they are already being displayed.
  */
 
-const body = document.querySelector('body');
+/*const body = document.querySelector('body');
 
 body.addEventListener('click', () => {
 
     const menuItems = document.getElementById('menu_items');
+    
+    const nav = document.querySelector('navbar');
+  
     clearInterval(scrollOut);
+    
+   menuItems.style.display = 'none';
+   nav.style.opacity = ".5";
+   
+});*/
 
-    menuItems.style.display = 'none';
+const menuItems = document.getElementById('menu_items');
 
-});
+menuItems.addEventListener('click', () => {
+  
+  const nav = document.querySelector('navbar');
+  clearInterval(scrollOut);
+  menuItems.style.display = 'none';
+  nav.style.opacity = ".5";
+})
 
 /**
  * @description creates a smooth scroll feature when a menu list item is clicked.
@@ -97,7 +115,9 @@ const scrollToSection = () => {
     const menuParent = document.getElementById('menu_items').children;
 
     const itemsParent = menuParent[0];
-
+    
+    const nav = document.querySelector('nav');
+    
     for (let i = 0; i < itemsParent.children.length; i++) {
         itemsParent.children[i].addEventListener('click', (e) => {
 
@@ -115,7 +135,7 @@ const scrollToSection = () => {
                     behavior: "smooth"
                 })
 
-                console.log(targetId);
+                showMenu();
 
             } else {
                 targetId = targetId[0].toLowerCase();
@@ -123,6 +143,7 @@ const scrollToSection = () => {
                 targetElement = document.getElementById(targetId);
 
                 targetElement.scrollIntoView({ behavior: "smooth" });
+                showMenu();
             }
         })
     }
