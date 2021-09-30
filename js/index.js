@@ -9,17 +9,17 @@ let x = 0;
 const showMenu = () => {
 
     let menuList = document.getElementById('menu_items');
-    
+
     let nav = document.querySelector('navbar');
 
     if (menuList.style.display === 'none') {
         x = 0;
         scrollOut();
         menuList.style.display = 'flex';
-        nav.style.opacity = '.97';
+        //nav.style.opacity = '.97';
     } else {
         menuList.style.display = 'none';
-        nav.style.opacity = ".5";
+        //nav.style.opacity = ".5";
 
     }
 }
@@ -98,11 +98,11 @@ body.addEventListener('click', () => {
 const menuItems = document.getElementById('menu_items');
 
 menuItems.addEventListener('click', () => {
-  
-  const nav = document.querySelector('navbar');
-  clearInterval(scrollOut);
-  menuItems.style.display = 'none';
-  nav.style.opacity = ".5";
+
+    const nav = document.querySelector('navbar');
+    clearInterval(scrollOut);
+    menuItems.style.display = 'none';
+    //nav.style.opacity = ".5";
 })
 
 /**
@@ -115,9 +115,9 @@ const scrollToSection = () => {
     const menuParent = document.getElementById('menu_items').children;
 
     const itemsParent = menuParent[0];
-    
+
     const nav = document.querySelector('nav');
-    
+
     for (let i = 0; i < itemsParent.children.length; i++) {
         itemsParent.children[i].addEventListener('click', (e) => {
 

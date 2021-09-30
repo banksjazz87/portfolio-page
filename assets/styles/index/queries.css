@@ -44,7 +44,7 @@
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
     body {
         width: 100vw;
         font-size: 14px;
@@ -52,6 +52,5 @@
         margin-top: 0;
         margin-right: 0;
         margin-bottom: 0;
-        
     }
 }

@@ -21,8 +21,8 @@ navbar {
     top: 0;
     left: 0;
     background-color: #364156;
-    opacity: .5;
-    z-index: 2;
+    /*opacity: .5;*/
+    z-index: 1;
 }
 
 #menu_container {
@@ -99,14 +99,15 @@ navbar {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 32em;
+    margin-top: 62vh;
+    /*margin-bottom: 10vh;*/
     background-color: #11151c;
     opacity: .85;
     width: 100vw;
     padding: 2px;
-    position: absolute;
-   /* margin-bottom: 6.7em;*/
-   /*margin-bottom: 3.3em;*/
+    position: relative;
+    /* margin-bottom: 6.7em;*/
+    /*margin-bottom: 3.3em;*/
     /* line-height: 5px;*/
     /*z-index: 1;*/
 }
@@ -159,7 +160,7 @@ li {
 }
 
 #experience a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .project_pic {
@@ -362,13 +363,12 @@ footer a :active {
     position: fixed;
     left: 0;
     bottom: 0;
-    padding-bottom: .5em;
-    padding-top: .5em;
+    padding-bottom: .1em;
+    padding-top: .1em;
     width: 100vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100vw;
     background-color: #364156;
     justify-content: center;
 }
