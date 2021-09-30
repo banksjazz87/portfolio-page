@@ -20,8 +20,8 @@ navbar {
     position: fixed;
     top: 0;
     left: 0;
-   /* background-color: #364156;*/
-   background-color: red;
+   background-color: #364156;
+   /*background-color: red;*/
     /*opacity: .5;*/
     z-index: 1;
 }
@@ -102,11 +102,11 @@ navbar {
     /*justify-content: center;*/
     /*margin-top: 62vh;*/
     align-self: flex-end;
-    margin-bottom: 2.5em;
+    margin-bottom: 5em;
     background-color: #11151c;
     opacity: .85;
     width: 100vw;
-    padding: .5em.5em .5em .5em;
+    padding: .15em .15em .15em .15em;
     /*position: relative;*/
     /* margin-bottom: 6.7em;*/
     /*margin-bottom: 3.3em;*/
