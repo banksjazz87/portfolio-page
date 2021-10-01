@@ -16,11 +16,8 @@ const showMenu = () => {
         x = 0;
         scrollOut();
         menuList.style.display = 'flex';
-        //nav.style.opacity = '.97';
     } else {
         menuList.style.display = 'none';
-        //nav.style.opacity = ".5";
-
     }
 }
 
@@ -76,24 +73,9 @@ menu.addEventListener('click', () => {
 
 
 /**
- * @description an event listener placed on the body of the DOM.
+ * @description an event listener placed on the menu_items.
  * @returns hides the menu items if they are already being displayed.
  */
-
-/*const body = document.querySelector('body');
-
-body.addEventListener('click', () => {
-
-    const menuItems = document.getElementById('menu_items');
-    
-    const nav = document.querySelector('navbar');
-  
-    clearInterval(scrollOut);
-    
-   menuItems.style.display = 'none';
-   nav.style.opacity = ".5";
-   
-});*/
 
 const menuItems = document.getElementById('menu_items');
 
@@ -102,7 +84,6 @@ menuItems.addEventListener('click', () => {
     const nav = document.querySelector('navbar');
     clearInterval(scrollOut);
     menuItems.style.display = 'none';
-    //nav.style.opacity = ".5";
 })
 
 /**
