@@ -22,13 +22,18 @@
     #about {
         grid-area: about;
         text-align: center;
+        padding: 1em .5em 1em .5em;
+        border-style: solid;
         border-width: .15em;
         border-color: #364156;
         border-radius: 3%;
-        padding: 1em .5em 1em .5em;
+    }
+    #about_me {
+        font-size: 1.7em;
     }
     #about p {
         text-align: left;
+        padding: .5em;
     }
     #technical_skills {
         grid-area: skills;
@@ -66,6 +71,7 @@
     }
     #project_header {
         grid-area: header;
+        text-align: center;
     }
     #travel_app {
         grid-area: travel;
