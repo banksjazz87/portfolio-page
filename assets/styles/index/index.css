@@ -20,7 +20,7 @@ navbar {
     position: fixed;
     top: 0;
     left: 0;
-   background-color: #364156;
+    background-color: #364156;
     z-index: 1;
 }
 
@@ -82,14 +82,14 @@ navbar {
     margin-left: 0;
     background-image: url("/assets/images/backgroundImage.jpg");
     background-repeat: no-repeat;
-    background-size: center;
+    background-size: cover;
     background-position: center;
 }
 
 #opening_text {
     display: flex;
     flex-wrap: wrap;
-   flex-direction: column;
+    flex-direction: column;
     align-items: center;
     justify-items: center;
     width: 100vw;
@@ -307,6 +307,14 @@ footer p {
     margin-bottom: 4em;
     left: 0;
     width: 75vw;
+}
+
+#footer_text a {
+    color: #d66853;
+}
+
+#footer_text a:hover {
+    color: #f88a76;
 }
 
 footer img {
