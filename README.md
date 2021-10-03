@@ -17,4 +17,4 @@ This is a simple website, that was created to showcase other applications that I
     * Open the index.html file in your browser.
 
 ## Summary
-  This is just a very simple portfolio website.  If you have any suggestions to make it better, feel free to send me a message or a pull request.  Thanks for checking it out!
+  This is just a very simple portfolio website.  Feel free to send me a message or a pull request, if you have any suggestions to make it better.  Thanks for checking it out!
