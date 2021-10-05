@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
     body {
         font-size: 20px;
         margin-left: 0;
@@ -16,8 +16,8 @@
         margin-left: 0;
         background-image: url("/assets/images/backgroundImage.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center -5vh;
+        background-size: 80vw;
+        background-position: center;
     }
     #about {
         grid-area: about;
