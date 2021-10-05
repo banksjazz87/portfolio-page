@@ -17,7 +17,7 @@
         background-image: url("/assets/images/backgroundImage.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center -40vh;
+        background-position: center -20vh;
     }
     #about {
         grid-area: about;
