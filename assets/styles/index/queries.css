@@ -76,8 +76,8 @@
     #travel_app {
         grid-area: travel;
     }
-    #sentiment_app {
-        grid-area: sentiment;
+    #shipping_creator {
+        grid-area: shipping;
     }
     #landing_page {
         grid-area: landing;
@@ -93,7 +93,7 @@
         grid-row-gap: 2em;
         grid-template-rows: auto auto auto;
         grid-template-columns: auto auto;
-        grid-template-areas: "header header" "travel sentiment" "landing timer";
+        grid-template-areas: "header header" "shipping travel" "landing timer";
     }
 }
 

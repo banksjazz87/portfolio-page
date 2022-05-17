@@ -174,8 +174,8 @@ li {
     margin: auto;
 }
 
-#sentiment_app_pic {
-    background-image: url("/assets/images/sentimentAnalysis.png");
+#shipping_pic {
+    background-image: url("/assets/images/shippingCreatorImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
