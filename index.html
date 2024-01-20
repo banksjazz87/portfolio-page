@@ -19,7 +19,7 @@
             <div class="dash"></div>
             <div class="dash"></div>
         </div>
-        <div id="menu_items" style="display: none; width: 0vw;">
+        <div id="menu_items" class="dark_tile" style="display: none; width: 0vw;">
             <ul>
                 <li>Home</li>
                 <li>About Me</li>
@@ -30,7 +30,7 @@
     </navbar>
 
     <div id="inner_page_container">
-        <div id="opening_screen">
+        <div id="opening_screen" style="background-image: url('/portfolio-page/assets/images/backgroundImage.jpg')">
 
             <header id="opening_text">
                 <h1 style="font-size: 1.7em; font-style: italic;">Innovative solutions for your everyday needs.</h1>
@@ -48,54 +48,56 @@
                         for the Udacity Front End Web Developer course. I'm looking forward to using my programming skills to simplify real world problems.</p>
 
                 </div>
-                <div id="technical_skills">
-                    <h3>Technical Skills</h3>
-                    <ul id="technical_skills_list">
-                        <li>JavaScript</li>
-                        <li>React.js</li>
-                        <li>Node.js</li>
-                        <li>MongoDB</li>
-                        <li>Express.js</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>SASS</li>
-                        <li>Jest.js</li>
-                        <li>Webpack</li>
-                        <li>Git</li>
-                        <li>Github</li>
-                    </ul>
-                </div>
-                <div id="certificate_items">
-                    <h3 id="certificates">Certificates</h3>
-                    <h4 id="udacity">Udacity</h4>
-                    <ul id="udacity_list">
-                        <li>Front End Web Developer (Jan 2021- Sept 2021)</li>
-                    </ul>
+                <div class="about_tiles">
+                    <div id="technical_skills" class="dark_tile">
+                        <h3>Technical Skills</h3>
+                        <ul id="technical_skills_list">
+                            <li>JavaScript</li>
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                            <li>Express.js</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SASS</li>
+                            <li>Jest.js</li>
+                            <li>Webpack</li>
+                            <li>Git</li>
+                            <li>Github</li>
+                        </ul>
+                    </div>
+                    <div id="certificate_items" class="dark_tile">
+                        <h3 id="certificates">Certificates</h3>
+                        <h4 id="udacity">Udacity</h4>
+                        <ul id="udacity_list">
+                            <li>Front End Web Developer (Jan 2021- Sept 2021)</li>
+                        </ul>
 
-                    <h4 id="freeCodeCamp">freeCodeCamp</h4>
-                    <ul id="freeCodeCamp_list">
-                        <li>Responsive Web Design (Jan 2020 - March 2020)</li>
-                        <br/>
-                        <li>JavaScript Algorithms and Data Structures (March 2020 - June 2020)</li>
-                        <br/>
-                        <li>Front End Development Libraries (June 2020 - Jan 2021)</li>
-                    </ul>
-                </div>
-                <div id="experience">
-                    <h3 id="experience_heading">Experience</h3>
-                    <h4 id="chapel" style="margin-bottom: 0;">Volunteer</h4>
-                    <p style="margin-bottom: 0; margin-top: 0;">Chapel on The Hill</p>
-                    <p style="margin-top: 0;">Emlenton, PA (09/2020 - Current)</p>
-                    <ul>
-                        <li>Manage the media
-                            <a href="https://chapelonthehillag.com/media" target="blank" style="color: #d66853">
+                        <h4 id="freeCodeCamp">freeCodeCamp</h4>
+                        <ul id="freeCodeCamp_list">
+                            <li>Responsive Web Design (Jan 2020 - March 2020)</li>
+                            <br/>
+                            <li>JavaScript Algorithms and Data Structures (March 2020 - June 2020)</li>
+                            <br/>
+                            <li>Front End Development Libraries (June 2020 - Jan 2021)</li>
+                        </ul>
+                    </div>
+                    <div id="experience" class="dark_tile">
+                        <h3 id="experience_heading">Experience</h3>
+                        <h4 id="chapel" style="margin-bottom: 0;">Volunteer</h4>
+                        <p style="margin-bottom: 0; margin-top: 0;">Chapel on The Hill</p>
+                        <p style="margin-top: 0;">Emlenton, PA (09/2020 - Current)</p>
+                        <ul>
+                            <li>Manage the media
+                                <a href="https://chapelonthehillag.com/media" target="blank" style="color: #d66853">
                 page.
                </a>
-                        </li>
-                        <li>Update the weekly podcasts.</li>
-                        <li>Write custom HTML and CSS when needed.</li>
-                    </ul>
+                            </li>
+                            <li>Update the weekly podcasts.</li>
+                            <li>Write custom HTML and CSS when needed.</li>
+                        </ul>
 
+                    </div>
                 </div>
             </section>
 
@@ -128,7 +130,7 @@
 
                 <card id="travel_app">
                     <h3 class="card_title">Travel Application</h3>
-                    <div id="travel_app_pic" class="project_pic"></div>
+                    <div id="travel_app_pic" class="project_pic" style="background-image: url('/portfolio-page/assets/images/travelApp.png')"></div>
 
                     <h4 class="subheading">Description</h4>
                     <p>

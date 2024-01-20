@@ -11,6 +11,7 @@ body {
     right: 0;
     left: 0;
     padding: 0 0 0 0;
+    overflow-x: hidden;
 }
 
 #inner_page_container {
@@ -24,7 +25,8 @@ body {
 
 navbar {
     width: 100vw;
-    height: 2.25em;
+    padding-top: .5em;
+    padding-bottom: .5em;
     margin-top: 0;
     position: fixed;
     top: 0;
@@ -35,10 +37,22 @@ navbar {
 }
 
 #menu_container {
-    padding: .2em .2em .2em .2em;
     width: 3em;
     margin-left: .2em;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5em;
+    justify-content: center;
+    height: 100%;
+}
+
+#menu_container:hover {
+    cursor: pointer;
+}
+
+#menu_container:hover .dash {
+    background-color: #d66853;
 }
 
 #menu_items {
@@ -74,12 +88,11 @@ navbar {
 .dash {
     background-color: white;
     width: 32px;
-    height: 3px;
+    height: 2px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: .25em;
-    margin-bottom: .2em;
     color: white;
+    transition: all .4s ease-in-out;
 }
 
 #opening_screen {
@@ -90,7 +103,6 @@ navbar {
     height: 100vh;
     width: 100vw;
     margin-left: 0;
-    background-image: url("/assets/images/backgroundImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -131,12 +143,21 @@ navbar {
     justify-content: space-evenly;
     margin-right: 2vw;
     margin-left: 2vw;
-    border-style: solid;
+    /* border-style: solid;
     border-width: .25em;
     border-color: #364156;
-    border-radius: 3%;
+    border-radius: 3%; */
     padding: 1em 2em 1em 2em;
     line-height: 1.5em;
+}
+
+.about_tiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 2rem;
+    column-gap: 2rem;
 }
 
 li {
@@ -162,14 +183,23 @@ li {
     margin-right: 2vw;
     justify-content: space-evenly;
     align-content: center;
-    border-style: solid;
+    /* border-style: solid;
     border-width: .25em;
     border-color: #364156;
-    border-radius: 3%;
+    border-radius: 3%; */
     padding: 1em 2em 1em 2em;
     margin-top: 1em;
     margin-bottom: 3em;
     line-height: 1.5em;
+}
+
+.dark_tile {
+    background-image: linear-gradient(90deg, #364156, #2e384a);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    border-style: none;
+    padding: 1em .5em 1em .5em;
+    width: 30%;
 }
 
 #travel_app_pic {
@@ -355,8 +385,8 @@ footer a :active {
     position: fixed;
     left: 0;
     bottom: 0;
-    padding-bottom: .1em;
-    padding-top: .1em;
+    padding-bottom: .5em;
+    padding-top: .5em;
     width: 100vw;
     display: flex;
     flex-direction: row;
