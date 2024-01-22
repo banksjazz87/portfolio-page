@@ -131,3 +131,102 @@ const scrollToSection = () => {
 }
 
 scrollToSection();
+
+//Array of values for the logos.
+const logoArray = [{
+        imgSrc: "/portfolio-page/assets/images/logos/css-logo.png",
+        altText: 'css logo',
+        titleText: 'CSS Logo',
+        text: 'CSS'
+    },
+    {
+        imgSrc: "/portfolio-page/assets/images/logos/express-white.png",
+        altText: 'express logo',
+        titleText: 'Express logo',
+        text: 'Express'
+    },
+    {
+        imgSrc: "/portfolio-page/assets/images/logos/Git-Icon.png",
+        altText: 'Git Icon',
+        titleText: 'Git logo',
+        text: 'Git'
+    },
+    {
+        imgSrc: "/portfolio-page/assets/images/logos/html-logo.png",
+        altText: 'HTML logo',
+        titleText: 'HTML logo',
+        text: 'HTML'
+    },
+    {
+        imgSrc: "/portfolio-page/assets/images/logos/JavaScript-logo.png",
+        altText: 'JavaScript logo',
+        titleText: 'JavaScript logo',
+        text: 'JavaScript'
+    },
+    {
+        imgSrc: "/portfolio-page/assets/images/logos/mongodb_logo.png",
+        altText: 'MongoDB logo',
+        titleText: 'MongoDB logo',
+        text: 'MongoDB'
+    },
+    {
+        imgSrc: "/portfolio-page/assets/images/logos/mysql-logo.png",
+        altText: 'MySQL logo',
+        titleText: 'MySQL logo',
+        text: 'MySQL'
+    },
+    {
+        imgSrc: "/portfolio-page/assets/images/logos/node-logo.png",
+        altText: 'Node logo',
+        titleText: 'Node logo',
+        text: 'Node JS'
+    },
+    {
+        imgSrc: "/portfolio-page/assets/images/logos/php_logo.png",
+        altText: 'PHP logo',
+        titleText: 'PHP logo',
+        text: 'PHP'
+    },
+    {
+        imgSrc: "/portfolio-page/assets/images/logos/react-icon.png",
+        altText: 'React logo',
+        titleText: 'React logo',
+        text: 'React'
+    },
+    {
+        imgSrc: "/portfolio-page/assets/images/logos/typescript-logo-removebg-preview.png",
+        altText: 'TypeScript logo',
+        titleText: 'TypeScript logo',
+        text: 'TypeScript'
+    },
+
+];
+
+//Used to create the logo items
+const renderLogos = () => {
+
+    const parentContainer = document.getElementById('technical_skills_logos_wrapper');
+
+    for (let i = 0; i < logoArray.length; i++) {
+
+        let currentLogo = logoArray[i];
+        let divWrapper = document.createElement('div');
+        divWrapper.classList.add('logo_item');
+
+        let newImage = document.createElement('img');
+        newImage.src = currentLogo.imgSrc;
+        newImage.title = currentLogo.titleText;
+        newImage.alt = currentLogo.altText;
+        newImage.classList.add('logo_image');
+
+        let newParagraph = document.createElement('p');
+        newParagraph.textContent = currentLogo.text;
+
+        divWrapper.appendChild(newImage);
+        divWrapper.appendChild(newParagraph);
+
+        parentContainer.appendChild(divWrapper);
+
+    }
+}
+renderLogos();

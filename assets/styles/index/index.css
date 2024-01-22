@@ -12,6 +12,13 @@ body {
     left: 0;
     padding: 0 0 0 0;
     overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
 }
 
 #inner_page_container {
@@ -215,6 +222,43 @@ li::before {
 
 .dark_tile h3 {
     text-align: center;
+}
+
+.logo_image {
+    height: 60px;
+    width: auto;
+}
+
+.logo_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_item p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#tech_skills {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#technical_skills_logos_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
 }
 
 #travel_app_pic {
