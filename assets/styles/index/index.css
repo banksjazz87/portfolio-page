@@ -125,6 +125,14 @@ navbar {
     justify-items: center;
 }
 
+#opening_text h1 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2.75em;
+    text-align: center;
+    line-height: 1.2em;
+}
+
 .dark_button {
     background-color: #364156;
     align-self: center;
@@ -199,10 +207,6 @@ navbar {
     justify-content: flex-end;
 }
 
-#about_me {
-    margin-left: 10px;
-}
-
 .about_tiles {
     display: flex;
     flex-direction: row;
@@ -210,6 +214,8 @@ navbar {
     justify-content: center;
     row-gap: 2rem;
     column-gap: 2rem;
+    color: #1f1f1f;
+    margin-top: 40px;
 }
 
 li {
@@ -263,15 +269,35 @@ li::before {
 
 .dark_tile {
     background-image: linear-gradient(135deg, #364156, #2e384a);
-    box-shadow: 0 3px 12px rgba(0, 0, 0, .9);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
     border-radius: 6px;
     border-style: none;
     padding: 1em .5em 1em .5em;
     flex: 1;
 }
 
-.dark_tile h3 {
+.dark_tile h3,
+.light_tile h3 {
     text-align: center;
+}
+
+.light_tile {
+    background-color: #f8f8f8;
+    box-shadow: 0 6px 32px rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    border-style: none;
+    padding: 0 1em 2em 1em;
+    flex: 1;
+}
+
+.light_tile h3 {
+    margin-top: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.light_tile h4 {
+    margin-bottom: 0;
 }
 
 .logo_image {

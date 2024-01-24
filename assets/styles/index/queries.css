@@ -22,7 +22,7 @@
     #about_me {
         font-size: 1.7em;
     }
-    #about p {
+    /* #about p {
         text-align: left;
         padding: .5em;
     }
@@ -37,7 +37,7 @@
     #experience {
         grid-area: experience;
         padding: 1em .5em 1em .5em;
-    }
+    } */
     /* #side_column {
         display: grid;
         margin-left: 2vw;

@@ -140,7 +140,7 @@ const logoArray = [{
         text: 'CSS'
     },
     {
-        imgSrc: "/portfolio-page/assets/images/logos/express-white.png",
+        imgSrc: "/portfolio-page/assets/images/logos/express-black.png",
         altText: 'express logo',
         titleText: 'Express logo',
         text: 'Express'
