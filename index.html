@@ -8,6 +8,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="assets/styles/index/index.css">
     <link rel="stylesheet" href="assets/styles/index/queries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,22 +34,34 @@
     </navbar>
 
     <div id="inner_page_container">
-        <div id="opening_screen" style="background-image: url('/portfolio-page/assets/images/backgroundImage.jpg')">
+        <div id="opening_screen">
 
             <header id="opening_text">
                 <h1 style="font-size: 1.7em; font-style: italic;">Innovative solutions for your everyday needs.</h1>
-                <p style="font-size: 1.5em; margin-bottom: 0; margin-top: 2px;"> Chris Banks </h1>
-                    <p style="font-size: 1.3em; margin-top: 0;">-Front-End Web Developer</p>
+                <p style="font-size: 1.5em; margin-bottom: 0; margin-top: 2px;"> Chris Banks </p>
+                <p style="font-size: 1.3em; margin-top: 0;">-Front-End Web Developer</p>
             </header>
+            <a class="dark_button" href="#side_column">Learn More</a>
 
         </div>
 
         <main>
             <section id="side_column">
                 <div id="about">
-                    <h2 id="about_me">About Me</h2>
-                    <p id="about_me_text"> My name is Chris Banks. I'm a Front End Web Developer who enjoys creating well designed, fully responsive web applications that make for an enjoyable user experience. Most recently, I've created a travel application as a capstone project
-                        for the Udacity Front End Web Developer course. I'm looking forward to using my programming skills to simplify real world problems.</p>
+                    <div id="image_section">
+                        <img id="developer_image" src="/portfolio-page/assets/images/cropped-profile-image.png" alt="image of Chris Banks" title="Chris Banks" />
+                    </div>
+                    <div id="text_section">
+                        <h2 id="about_me">About Me</h2>
+                        <p id="about_me_text"> My name is Chris Banks. I'm a Front End Web Developer who enjoys creating well designed, fully responsive web applications that make for an enjoyable user experience. Most recently, I've created a travel application as a capstone
+                            project for the Udacity Front End Web Developer course. I'm looking forward to using my programming skills to simplify real world problems.</p>
+                    </div>
+
+                </div>
+                <div id="tech_skills">
+                    <h2>Technical Skills</h2>
+                    <div id="technical_skills_logos_wrapper">
+                    </div>
 
                 </div>
                 <div class="about_tiles">
@@ -186,20 +199,12 @@
                 </card>
 
             </section>
-
-
-            <section id="tech_skills">
-                <h2>Technical Skills</h2>
-                <div id="technical_skills_logos_wrapper">
-                </div>
-
-            </section>
         </main>
     </div>
 
     <footer id="contact">
         <div id="footer_text">
-            <hr style="margin: auto; height: .2em; border-style: none; background-color: #364156;" />
+            <hr style="height: 1px; border-style: none; background-color: #364156;" />
             <p style="font-size: 1.2em">Contact Information</p>
             <p>Feel free to e-mail me</p>
             <a href="mailto: bansjazz87@gmail.com" target="blank">
