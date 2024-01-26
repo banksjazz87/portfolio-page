@@ -1,23 +1,26 @@
 body {
     color: #e1e1e1;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     font-size: 16px;
     margin-left: 0;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
+    bottom: 0;
     right: 0;
     left: 0;
     padding: 0 0 0 0;
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
+    overscroll-behavior: none;
 }
 
 html {
     scroll-behavior: smooth;
     overscroll-behavior: none;
     margin-bottom: 0;
+    height: 100%;
 }
 
 h1,
@@ -137,7 +140,7 @@ navbar {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 
 #opening_text h1 {
@@ -146,6 +149,14 @@ navbar {
     font-size: 2.75em;
     text-align: center;
     line-height: 1.2em;
+    display: flex;
+}
+
+#header_sub_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .dark_button {
@@ -270,7 +281,7 @@ li::before {
 
 .project_pic {
     height: 50vh;
-    width: 50vw;
+    width: 100%;
     margin: auto;
     border-radius: 5%;
 }
@@ -324,6 +335,10 @@ li::before {
     margin-bottom: 0;
 }
 
+.inner_tile {
+    margin: 0 1em 2em 1em;
+}
+
 .logo_image {
     height: 60px;
     width: auto;
@@ -352,6 +367,7 @@ li::before {
     align-items: center;
     color: #1f1f1f;
     max-width: 1280px;
+    padding: 2em;
 }
 
 #technical_skills_logos_wrapper {
@@ -369,9 +385,6 @@ li::before {
     background-size: cover;
     background-position: center;
     height: 16em;
-    width: 16em;
-    border-radius: 5%;
-    margin: auto;
 }
 
 #shipping_pic {
@@ -380,9 +393,6 @@ li::before {
     background-size: cover;
     background-position: center;
     height: 16em;
-    width: 16em;
-    border-radius: 5%;
-    margin: auto;
 }
 
 #landing_page_pic {
@@ -390,10 +400,8 @@ li::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 16em;
-    width: 16em;
-    border-radius: 5%;
-    margin: auto;
+    height: 500px;
+    width: 350px;
 }
 
 #timer_pic {
@@ -402,9 +410,6 @@ li::before {
     background-size: cover;
     background-position: center;
     height: 16em;
-    width: 16em;
-    border-radius: 5%;
-    margin: auto;
 }
 
 card {
@@ -412,27 +417,20 @@ card {
 }
 
 .card_title {
-    font-size: 1.5em;
     margin-top: .2em;
     align-self: center;
 }
 
-card {
+
+/* card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    flex-grow: 0;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
-    border-style: solid;
-    border-width: .15em;
-    border-color: #364156;
-    border-radius: 3%;
-    padding: 2em .5em 2em .5em;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
+    padding: 0 1em 2em 1em;
+    width: 40%;
+} */
 
 .subheading {
     margin-bottom: 0;
@@ -468,6 +466,32 @@ card a:hover {
 
 card a:active {
     transform: translateY(10%);
+}
+
+.card_tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    box-shadow: 0 6px 32px rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    border-style: none;
+    padding: 1em 1em 2em 1em;
+    max-width: 400px;
+    color: #1f1f1f;
+}
+
+.card_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2em;
+    row-gap: 2em;
+}
+
+#project_header {
+    text-align: center;
 }
 
 .project_links {
@@ -528,32 +552,6 @@ footer p {
 footer a {
     text-decoration: none;
 }
-
-
-/* footer img {
-    height: 2.1em;
-    width: 2.1em;
-    border-radius: 100%;
-} */
-
-
-/* footer a {
-    text-decoration: none;
-    margin-left: 1em;
-}
-
-footer a :hover {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #364156;
-}
-
-footer a :active {
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    outline: none;
-} */
 
 #social_links {
     padding-bottom: 1em;

@@ -134,67 +134,67 @@ scrollToSection();
 
 //Array of values for the logos.
 const logoArray = [{
-        imgSrc: "/portfolio-page/assets/images/logos/css-logo.png",
+        imgSrc: "/assets/images/logos/css-logo.png",
         altText: 'css logo',
         titleText: 'CSS Logo',
         text: 'CSS'
     },
     {
-        imgSrc: "/portfolio-page/assets/images/logos/express-black.png",
+        imgSrc: "/assets/images/logos/express-black.png",
         altText: 'express logo',
         titleText: 'Express logo',
         text: 'Express'
     },
     {
-        imgSrc: "/portfolio-page/assets/images/logos/Git-Icon.png",
+        imgSrc: "/assets/images/logos/Git-Icon.png",
         altText: 'Git Icon',
         titleText: 'Git logo',
         text: 'Git'
     },
     {
-        imgSrc: "/portfolio-page/assets/images/logos/html-logo.png",
+        imgSrc: "/assets/images/logos/html-logo.png",
         altText: 'HTML logo',
         titleText: 'HTML logo',
         text: 'HTML'
     },
     {
-        imgSrc: "/portfolio-page/assets/images/logos/JavaScript-logo.png",
+        imgSrc: "/assets/images/logos/JavaScript-logo.png",
         altText: 'JavaScript logo',
         titleText: 'JavaScript logo',
         text: 'JavaScript'
     },
     {
-        imgSrc: "/portfolio-page/assets/images/logos/mongodb_logo.png",
+        imgSrc: "/assets/images/logos/mongodb_logo.png",
         altText: 'MongoDB logo',
         titleText: 'MongoDB logo',
         text: 'MongoDB'
     },
     {
-        imgSrc: "/portfolio-page/assets/images/logos/mysql-logo.png",
+        imgSrc: "/assets/images/logos/mysql-logo.png",
         altText: 'MySQL logo',
         titleText: 'MySQL logo',
         text: 'MySQL'
     },
     {
-        imgSrc: "/portfolio-page/assets/images/logos/node-logo.png",
+        imgSrc: "/assets/images/logos/node-logo.png",
         altText: 'Node logo',
         titleText: 'Node logo',
         text: 'Node JS'
     },
     {
-        imgSrc: "/portfolio-page/assets/images/logos/php_logo.png",
+        imgSrc: "/assets/images/logos/php_logo.png",
         altText: 'PHP logo',
         titleText: 'PHP logo',
         text: 'PHP'
     },
     {
-        imgSrc: "/portfolio-page/assets/images/logos/react-icon.png",
+        imgSrc: "/assets/images/logos/react-icon.png",
         altText: 'React logo',
         titleText: 'React logo',
         text: 'React'
     },
     {
-        imgSrc: "/portfolio-page/assets/images/logos/typescript-logo-removebg-preview.png",
+        imgSrc: "/assets/images/logos/typescript-logo-removebg-preview.png",
         altText: 'TypeScript logo',
         titleText: 'TypeScript logo',
         text: 'TypeScript'
