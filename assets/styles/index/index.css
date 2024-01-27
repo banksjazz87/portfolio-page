@@ -280,11 +280,13 @@ li::before {
 }
 
 .project_pic {
-    height: 100%;
-    width: auto;
+    height: 400px;
+    width: 100%;
     margin: auto;
     border-radius: 6px;
-    flex: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #projects {
@@ -413,8 +415,8 @@ card {
 }
 
 .card_title {
-    margin-top: .2em;
-    align-self: center;
+    text-transform: uppercase;
+    font-size: 1.4em;
 }
 
 
@@ -466,16 +468,16 @@ card a:active {
 
 .card_tile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     column-gap: 2em;
-    row-gap: 2em;
+    row-gap: .5em;
     background-color: #f8f8f8;
     box-shadow: 0 6px 32px rgba(0, 0, 0, .2);
     border-radius: 6px;
     border-style: none;
     padding: 2em 1em 2em 1em;
-    /* max-width: 400px; */
+    max-width: 500px;
     color: #1f1f1f;
 }
 
@@ -489,7 +491,7 @@ card a:active {
 }
 
 .project_text_content {
-    width: 50%;
+    width: 100%;
 }
 
 .project_text_content p {
