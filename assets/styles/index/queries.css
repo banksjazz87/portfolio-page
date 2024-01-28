@@ -6,9 +6,14 @@
    }
    
    @media (max-width: 767px) {
+       html {
+           overflow-x: hidden;
+       }
        .dark_tile,
        .light_tile {
            width: 100%;
+           flex: 0;
+           max-width: 90%;
        }
        #about,
        .about_tiles,
@@ -16,28 +21,19 @@
            display: flex;
            flex-direction: column;
        }
-       .project_pic {
-           max-width: 250px;
+       #projects {
+           margin: auto;
+       }
+       .project_links {
+           display: flex;
+           flex-direction: column;
+           row-gap: 10px;
+           width: 100%;
+       }
+       .project_links a {
+           text-align: center;
+       }
+       #header_sub_text {
+           bottom: 20px;
        }
    }
-   /* @media screen and (max-width: 400px) {
-       body {
-           width: 100vw;
-           font-size: 16px;
-           margin-left: 0;
-           margin-top: 0;
-           margin-right: 0;
-           margin-bottom: 0;
-       }
-   }
-   
-   @media screen and (max-width: 350px) {
-       body {
-           width: 100vw;
-           font-size: 14px;
-           margin-left: 0;
-           margin-top: 0;
-           margin-right: 0;
-           margin-bottom: 0;
-       }
-   } */
