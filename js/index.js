@@ -8,7 +8,7 @@ let x = 0;
 
 const showMenu = () => {
 
-    let menuList = document.getElementById('menu_items');
+    let menuList = document.getElementById('mobile_menu_items');
 
     let nav = document.querySelector('navbar');
 
@@ -27,7 +27,7 @@ const showMenu = () => {
  */
 
 const scrollOut = () => {
-    let menuList = document.getElementById('menu_items');
+    let menuList = document.getElementById('mobile_menu_items');
 
     setInterval(() => {
 
@@ -47,7 +47,7 @@ const scrollOut = () => {
  */
 
 const scrollIn = () => {
-    let menuList = document.getElementById('menu_items');
+    let menuList = document.getElementById('mobile_menu_items');
 
     setInterval(() => {
 
@@ -73,11 +73,11 @@ menu.addEventListener('click', () => {
 
 
 /**
- * @description an event listener placed on the menu_items.
+ * @description an event listener placed on the mobile_menu_items.
  * @returns hides the menu items if they are already being displayed.
  */
 
-const menuItems = document.getElementById('menu_items');
+const menuItems = document.getElementById('mobile_menu_items');
 
 menuItems.addEventListener('click', () => {
 
@@ -93,7 +93,7 @@ menuItems.addEventListener('click', () => {
 
 const scrollToSection = () => {
 
-    const menuParent = document.getElementById('menu_items').children;
+    const menuParent = document.getElementById('mobile_menu_items').children;
 
     const itemsParent = menuParent[0];
 

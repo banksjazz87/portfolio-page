@@ -83,7 +83,7 @@ navbar {
     background-color: #d66853;
 }
 
-#menu_items {
+#mobile_menu_items {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -94,7 +94,7 @@ navbar {
     color: white;
 }
 
-#menu_items ul {
+#mobile_menu_items ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,13 +104,31 @@ navbar {
     height: 100vh;
 }
 
-#menu_items ul :hover {
+#mobile_menu_items ul :hover {
     color: black;
 }
 
-#menu_items li {
+#mobile_menu_items li {
     list-style: none;
     align-self: center;
+}
+
+#menu_items {
+    position: absolute;
+    right: 0;
+    top: 25%;
+    right: 5%;
+}
+
+#desktop_menu_items {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    list-style-type: none;
+}
+
+#desktop_menu_items li::before {
+    content: '';
 }
 
 .dash {
@@ -214,8 +232,6 @@ navbar {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
-    /* margin-right: 2vw;
-    margin-left: 2vw; */
     padding: 1em 2em 1em 2em;
     line-height: 1.5em;
 }
