@@ -120,6 +120,24 @@ navbar {
     right: 5%;
 }
 
+#menu_items li {
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+}
+
+navbar a:hover {
+    color: #d66853;
+}
+
+navbar a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
 #desktop_menu_items {
     display: flex;
     flex-direction: row;
@@ -334,8 +352,7 @@ li::before {
     margin-right: 2vw;
     justify-content: space-evenly;
     align-content: center;
-    padding: 1em 2em 1em 2em;
-    margin-top: 60px;
+    padding: 60px 2em 1em 2em;
     margin-bottom: 3em;
     line-height: 1.5em;
     color: #1f1f1f;

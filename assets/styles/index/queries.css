@@ -1,3 +1,12 @@
+   @media (min-width: 767px) {
+       #menu_items {
+           display: flex;
+       }
+       #menu_container {
+           display: none;
+       }
+   }
+   
    @media (min-width: 900px) {
        body {
            font-size: 16px;
@@ -5,8 +14,14 @@
    }
    
    @media (max-width: 767px) {
-       html {
+       /* html {
            overflow-x: hidden;
+       } */
+       #menu_items {
+           display: none;
+       }
+       #menu_container {
+           display: flex;
        }
        .dark_tile,
        .light_tile {
@@ -34,5 +49,11 @@
        }
        #header_sub_text {
            bottom: 20px;
+       }
+   }
+   
+   @media (max-width: 400px) {
+       body {
+           font-size: 14px;
        }
    }
