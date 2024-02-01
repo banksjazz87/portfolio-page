@@ -338,7 +338,7 @@ li::before {
 
 #experience a:hover {
     color: #d66853;
-    border-bottom: 1px solid #364156;
+    border-bottom: 1px solid #d66853;
 }
 
 .project_pic {
@@ -576,7 +576,7 @@ footer p {
 }
 
 #footer_text a:hover {
-    border-bottom: 1px solid #364156;
+    border-bottom: 1px solid #d66853;
 }
 
 footer a {
