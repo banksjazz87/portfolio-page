@@ -50,6 +50,9 @@
        #header_sub_text {
            bottom: 20px;
        }
+       #mobile_menu_items {
+           max-width: unset;
+       }
    }
    
    @media (max-width: 400px) {

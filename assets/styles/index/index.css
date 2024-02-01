@@ -138,6 +138,18 @@ navbar a {
     cursor: pointer;
 }
 
+#mobile_menu_items li::before {
+    content: '';
+}
+
+#mobile_menu_items a {
+    transition: all .4s ease-in-out;
+}
+
+#mobile_menu_items a:hover {
+    color: #d66853;
+}
+
 #desktop_menu_items {
     display: flex;
     flex-direction: row;

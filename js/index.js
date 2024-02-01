@@ -230,31 +230,3 @@ const renderLogos = () => {
     }
 }
 renderLogos();
-
-function checkForCurrentSection() {
-    let current = '';
-    const about = document.getElementById('side_column');
-    const projects = document.getElementById('projects');
-    const techSkills = document.getElementById('tech_skills');
-    const contact = document.getElementById('contact');
-
-    const arrayOfElements = [about, projects, techSkills, contact];
-
-    for (let i = 0; i < arrayOfElements; i++) {
-        let currentRect = arrayOfElements[i].getBoundingClientRect().top;
-        let currentMenu = document.getElementById('desktop_menu_items').children[i].children[0];
-
-        if (currentRect === 0) {
-            current = currentMenu;
-        }
-    }
-
-    current.style.color = 'red';
-}
-
-document.addEventListener('scroll', () => {
-    let currentWindowWidth = window.innerWidth;
-    if (currentWindowWidth > 767) {
-        checkForCurrentSection();
-    }
-});
