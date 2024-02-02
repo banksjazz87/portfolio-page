@@ -1,24 +1,34 @@
 //A variable to keep track of the current height of the menu_list display
 let x = 0;
 
+function toggleItemDisplay(idString) {
+    const item = document.getElementById(idString);
+    console.log(item.style.display);
+    if (item.style.display === 'none') {
+        item.style.display = 'flex';
+    } else {
+        item.style.display = 'none';
+    }
+}
+
 /**
  * @description used to create an effect for the menu items to dynamically appear.
  * @returns an updated UI
  */
 
-const showMenu = () => {
-
+function showMenu() {
     let menuList = document.getElementById('mobile_menu_items');
+    x = 0;
+    scrollOut();
+    toggleItemDisplay('menu_container');
+    toggleItemDisplay('close_mobile_menu');
+    menuList.style.display = 'flex';
+}
 
+function hideMenu() {
+    let menuList = document.getElementById('mobile_menu_items');
     let nav = document.querySelector('navbar');
-
-    if (menuList.style.display === 'none') {
-        x = 0;
-        scrollOut();
-        menuList.style.display = 'flex';
-    } else {
-        menuList.style.display = 'none';
-    }
+    menuList.style.display = 'none';
 }
 
 /**
