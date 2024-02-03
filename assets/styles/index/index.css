@@ -204,18 +204,21 @@ navbar a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    row-gap: 20px;
 }
 
 #opening_text h1 {
     text-transform: capitalize;
     font-weight: 500;
-    font-size: 2.25em;
+    font-size: 6em;
     text-align: center;
+    line-height: 1em;
+    margin: 0;
 }
 
-.large_header_text {
-    font-size: 2.7em;
-    line-height: 1.2em;
+#opening_text p {
+    font-size: 2.5em;
+    margin: 0;
 }
 
 #header_sub_text {
@@ -224,7 +227,7 @@ navbar a {
     justify-content: center;
     align-content: center;
     position: absolute;
-    bottom: 100px;
+    bottom: 20%;
 }
 
 #header_sub_text p {
@@ -232,6 +235,7 @@ navbar a {
     text-transform: uppercase;
     line-height: 1.5em;
     letter-spacing: 1.2px;
+    font-size: 1.5em;
 }
 
 .dark_button {

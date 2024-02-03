@@ -70,6 +70,16 @@ const scrollIn = () => {
     }, 5);
 }
 
+function closeIconHandler() {
+    const closeIcon = document.getElementById('close_mobile_menu');
+    closeIcon.addEventListener('click', () => {
+        toggleItemDisplay('menu_container');
+        toggleItemDisplay('close_mobile_menu');
+        hideMenu();
+    });
+}
+closeIconHandler();
+
 /**
  * @description an event listener placed on the menu container.
  * @returns an updated UI with the menu items being shown or hidden.
@@ -240,3 +250,19 @@ const renderLogos = () => {
     }
 }
 renderLogos();
+
+window.addEventListener('resize', () => {
+    const width = window.innerWidth;
+    const mobileHamburgMenu = document.getElementById('menu_container');
+    const mobileClose = document.getElementById('close_mobile_menu');
+    const mobileMenu = document.getElementById('mobile_menu_items');
+
+    if (width > 767) {
+        console.log('close menu');
+        mobileHamburgMenu.style.display = 'none';
+        mobileClose.style.display = 'none';
+        mobileMenu.style.display = 'none';
+    } else {
+        mobileHamburgMenu.style.display = 'flex';
+    }
+})
