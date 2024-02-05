@@ -265,4 +265,28 @@ window.addEventListener('resize', () => {
     } else {
         mobileHamburgMenu.style.display = 'flex';
     }
-})
+});
+
+function slowLoadMainHeader() {
+    const header = document.getElementById('main_header');
+    header.style.marginLeft = '0';
+    header.style.opacity = '1';
+}
+
+function slowFadeInWithTimer(elementClass, num) {
+    const elements = document.getElementsByClassName(elementClass);
+    for (let i = 0; i < elements.length; i++) {
+        let element = elements[i];
+        element.style.opacity = "0";
+        setTimeout(() => {
+            elements[i].style.opacity = "1";
+        }, num);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    slowLoadMainHeader();
+    slowFadeInWithTimer('slow_fade_in', 2500);
+    slowFadeInWithTimer('header_sub_text_slow_fade', 2900);
+
+});
