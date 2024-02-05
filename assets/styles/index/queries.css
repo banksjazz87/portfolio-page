@@ -47,12 +47,15 @@
        }
        .project_links {
            display: flex;
-           flex-direction: column;
+           flex-direction: row;
+           flex-wrap: wrap;
+           column-gap: 10px;
            row-gap: 10px;
            width: 100%;
        }
        .project_links a {
            text-align: center;
+           max-width: 200px;
        }
        #mobile_menu_items {
            max-width: unset;

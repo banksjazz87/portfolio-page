@@ -27,7 +27,8 @@ function showMenu() {
 
 function hideMenu() {
     let menuList = document.getElementById('mobile_menu_items');
-    let nav = document.querySelector('navbar');
+    toggleItemDisplay('menu_container');
+    toggleItemDisplay('close_mobile_menu');
     menuList.style.display = 'none';
 }
 
@@ -40,13 +41,11 @@ const scrollOut = () => {
     let menuList = document.getElementById('mobile_menu_items');
 
     setInterval(() => {
-
         if (x < 100) {
             x++;
             menuList.style = "width:" + x + "vw;";
         } else {
             clearInterval(scrollOut);
-
         }
     }, 5);
 }
@@ -60,7 +59,6 @@ const scrollIn = () => {
     let menuList = document.getElementById('mobile_menu_items');
 
     setInterval(() => {
-
         if (x > 0) {
             x--;
             menuList.style.width = x + "vw;";
@@ -70,15 +68,11 @@ const scrollIn = () => {
     }, 5);
 }
 
-function closeIconHandler() {
-    const closeIcon = document.getElementById('close_mobile_menu');
-    closeIcon.addEventListener('click', () => {
-        toggleItemDisplay('menu_container');
-        toggleItemDisplay('close_mobile_menu');
-        hideMenu();
-    });
-}
-closeIconHandler();
+//Adding an event listener to the close mobile menu icon.
+const closeIcon = document.getElementById('close_mobile_menu');
+closeIcon.addEventListener('click', () => {
+    hideMenu();
+});
 
 /**
  * @description an event listener placed on the menu container.
@@ -86,7 +80,6 @@ closeIconHandler();
  */
 
 const menu = document.getElementById('menu_container');
-
 menu.addEventListener('click', () => {
     showMenu();
 });
@@ -100,7 +93,6 @@ menu.addEventListener('click', () => {
 const menuItems = document.getElementById('mobile_menu_items');
 
 menuItems.addEventListener('click', () => {
-
     const nav = document.querySelector('navbar');
     clearInterval(scrollOut);
     menuItems.style.display = 'none';
@@ -111,40 +103,29 @@ menuItems.addEventListener('click', () => {
  * @returns navigates the user to the part of the document that they have chosen to go to.
  */
 
-const scrollToSection = () => {
-
+function scrollToSection() {
     const menuParent = document.getElementById('mobile_menu_items').children;
-
     const itemsParent = menuParent[0];
-
     const nav = document.querySelector('nav');
 
     for (let i = 0; i < itemsParent.children.length; i++) {
         itemsParent.children[i].addEventListener('click', (e) => {
-
             let targetId = e.target.textContent.split(" ");
-
             let targetElement = "";
 
             if (targetId.length > 1) {
-
                 targetId = targetId[0].toLowerCase();
-
                 targetElement = document.getElementById(targetId);
-
                 targetElement.scrollIntoView({
                     behavior: "smooth"
-                })
-
-                showMenu();
+                });
+                hideMenu();
 
             } else {
                 targetId = targetId[0].toLowerCase();
-
                 targetElement = document.getElementById(targetId);
-
                 targetElement.scrollIntoView({ behavior: "smooth" });
-                showMenu();
+                hideMenu();
             }
         })
     }
@@ -287,6 +268,5 @@ function slowFadeInWithTimer(elementClass, num) {
 document.addEventListener('DOMContentLoaded', () => {
     slowLoadMainHeader();
     slowFadeInWithTimer('slow_fade_in', 2500);
-    slowFadeInWithTimer('header_sub_text_slow_fade', 2900);
-
+    slowFadeInWithTimer('header_sub_text_slow_fade', 3400);
 });
