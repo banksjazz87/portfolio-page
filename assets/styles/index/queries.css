@@ -13,13 +13,15 @@
        }
    }
    
-   @media (min-width: 900px) {
-       body {
+   @media (max-width: 767px) {
+       #opening_text {
+           font-size: 14px;
+           padding-left: 20px;
+           padding-right: 20px;
+       }
+       body p {
            font-size: 16px;
        }
-   }
-   
-   @media (max-width: 767px) {
        #menu_items {
            display: none;
        }
@@ -52,15 +54,9 @@
        }
        .project_links a {
            text-align: center;
-           max-width: 200px;
+           width: 100%;
        }
        #mobile_menu_items {
            max-width: unset;
-       }
-   }
-   
-   @media (max-width: 400px) {
-       body {
-           font-size: 14px;
        }
    }

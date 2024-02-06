@@ -249,8 +249,8 @@ window.addEventListener('resize', () => {
 });
 
 
-function slowLoadMainHeader() {
-    const header = document.getElementById('main_header');
+function slowLoadMainHeader(id) {
+    const header = document.getElementById(id);
     header.style.marginLeft = '0';
     header.style.opacity = '1';
 }
@@ -271,7 +271,7 @@ function slowFadeInWithTimer(elementClass, num) {
 document.addEventListener('DOMContentLoaded', () => {
     scrollToSection();
     renderLogos();
-    slowLoadMainHeader();
+    slowLoadMainHeader('main_header');
     slowFadeInWithTimer('slow_fade_in', 2500);
     slowFadeInWithTimer('header_sub_text_slow_fade', 3400);
 });
