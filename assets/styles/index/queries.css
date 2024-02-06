@@ -20,9 +20,6 @@
    }
    
    @media (max-width: 767px) {
-       /* html {
-           overflow-x: hidden;
-       } */
        #menu_items {
            display: none;
        }

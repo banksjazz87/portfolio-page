@@ -1,9 +1,14 @@
 //A variable to keep track of the current height of the menu_list display
 let x = 0;
 
+/**
+ * 
+ * @param {*} idString string
+ * @returns void
+ * @description used to toggle between the hamburg menu icon and close icon.
+ */
 function toggleItemDisplay(idString) {
     const item = document.getElementById(idString);
-    console.log(item.style.display);
     if (item.style.display === 'none') {
         item.style.display = 'flex';
     } else {
@@ -15,7 +20,6 @@ function toggleItemDisplay(idString) {
  * @description used to create an effect for the menu items to dynamically appear.
  * @returns an updated UI
  */
-
 function showMenu() {
     let menuList = document.getElementById('mobile_menu_items');
     x = 0;
@@ -24,6 +28,7 @@ function showMenu() {
     toggleItemDisplay('close_mobile_menu');
     menuList.style.display = 'flex';
 }
+
 
 function hideMenu() {
     let menuList = document.getElementById('mobile_menu_items');
@@ -36,10 +41,8 @@ function hideMenu() {
  * @description this setInterval function will be used to create a scroll effect.
  * @returns an updated width for the menu items.
  */
-
-const scrollOut = () => {
+function scrollOut() {
     let menuList = document.getElementById('mobile_menu_items');
-
     setInterval(() => {
         if (x < 100) {
             x++;
@@ -50,14 +53,13 @@ const scrollOut = () => {
     }, 5);
 }
 
+
 /**
  * @description this function will be used to create a scroll in effect.
  * @returns updates the UI with a scroll in feature.
  */
-
-const scrollIn = () => {
+function scrollIn() {
     let menuList = document.getElementById('mobile_menu_items');
-
     setInterval(() => {
         if (x > 0) {
             x--;
@@ -68,11 +70,13 @@ const scrollIn = () => {
     }, 5);
 }
 
+
 //Adding an event listener to the close mobile menu icon.
 const closeIcon = document.getElementById('close_mobile_menu');
 closeIcon.addEventListener('click', () => {
     hideMenu();
 });
+
 
 /**
  * @description an event listener placed on the menu container.
@@ -89,20 +93,18 @@ menu.addEventListener('click', () => {
  * @description an event listener placed on the mobile_menu_items.
  * @returns hides the menu items if they are already being displayed.
  */
-
 const menuItems = document.getElementById('mobile_menu_items');
-
 menuItems.addEventListener('click', () => {
     const nav = document.querySelector('navbar');
     clearInterval(scrollOut);
     menuItems.style.display = 'none';
-})
+});
+
 
 /**
  * @description creates a smooth scroll feature when a menu list item is clicked.
  * @returns navigates the user to the part of the document that they have chosen to go to.
  */
-
 function scrollToSection() {
     const menuParent = document.getElementById('mobile_menu_items').children;
     const itemsParent = menuParent[0];
@@ -131,7 +133,6 @@ function scrollToSection() {
     }
 }
 
-scrollToSection();
 
 //Array of values for the logos.
 const logoArray = [{
@@ -203,9 +204,9 @@ const logoArray = [{
 
 ];
 
+
 //Used to create the logo items
 const renderLogos = () => {
-
     const parentContainer = document.getElementById('technical_skills_logos_wrapper');
 
     for (let i = 0; i < logoArray.length; i++) {
@@ -230,7 +231,7 @@ const renderLogos = () => {
 
     }
 }
-renderLogos();
+
 
 window.addEventListener('resize', () => {
     const width = window.innerWidth;
@@ -239,7 +240,6 @@ window.addEventListener('resize', () => {
     const mobileMenu = document.getElementById('mobile_menu_items');
 
     if (width > 767) {
-        console.log('close menu');
         mobileHamburgMenu.style.display = 'none';
         mobileClose.style.display = 'none';
         mobileMenu.style.display = 'none';
@@ -248,11 +248,13 @@ window.addEventListener('resize', () => {
     }
 });
 
+
 function slowLoadMainHeader() {
     const header = document.getElementById('main_header');
     header.style.marginLeft = '0';
     header.style.opacity = '1';
 }
+
 
 function slowFadeInWithTimer(elementClass, num) {
     const elements = document.getElementsByClassName(elementClass);
@@ -265,7 +267,10 @@ function slowFadeInWithTimer(elementClass, num) {
     }
 }
 
+
 document.addEventListener('DOMContentLoaded', () => {
+    scrollToSection();
+    renderLogos();
     slowLoadMainHeader();
     slowFadeInWithTimer('slow_fade_in', 2500);
     slowFadeInWithTimer('header_sub_text_slow_fade', 3400);

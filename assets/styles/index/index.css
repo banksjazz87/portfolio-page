@@ -427,6 +427,7 @@ li::before {
     padding: 0 1em 2em 1em;
     flex: 1;
     color: #1f1f1f;
+    max-width: 500px;
 }
 
 .light_tile h3 {
