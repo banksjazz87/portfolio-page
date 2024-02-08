@@ -216,7 +216,6 @@ navbar a {
     font-size: 6em;
     text-align: center;
     line-height: 1em;
-    margin-left: -100vw;
     margin-bottom: 0;
     opacity: 0;
     transition: all 2.4s ease-in-out;
@@ -225,7 +224,7 @@ navbar a {
 .header_top_text {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 20px;
 }
 
 #opening_text p {
@@ -262,7 +261,7 @@ navbar a {
     color: #f5f5f5;
     padding: .75em 1.5em .75em 1.5em;
     border-radius: 2px;
-    margin-top: 40px;
+    margin-top: 20px;
     transition: all .4s ease-in-out;
     scroll-behavior: smooth;
     scroll-margin: 40px;

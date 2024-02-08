@@ -264,7 +264,7 @@ function slowFadeInWithTimer(elementClass, num) {
 document.addEventListener('DOMContentLoaded', () => {
     scrollToSection();
     renderLogos();
-    slowFadeInWithTimer('large_header_text', 1500);
-    slowFadeInWithTimer('slow_fade_in', 2500);
-    slowFadeInWithTimer('header_sub_text_slow_fade', 3400);
+    slowFadeInWithTimer('large_header_text', 500);
+    slowFadeInWithTimer('slow_fade_in', 1500);
+    slowFadeInWithTimer('header_sub_text_slow_fade', 2500);
 });

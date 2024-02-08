@@ -19,6 +19,16 @@
            padding-left: 20px;
            padding-right: 20px;
        }
+       #main_header,
+       .large_header_text {
+           font-size: 3.5em;
+       }
+       #opening_text p {
+           font-size: 1.5em;
+       }
+       #header_sub_text p {
+           font-size: 1.25em;
+       }
        body p {
            font-size: 16px;
        }
@@ -58,5 +68,8 @@
        }
        #mobile_menu_items {
            max-width: unset;
+       }
+       .logo_item {
+           width: 40%;
        }
    }
