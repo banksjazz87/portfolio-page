@@ -253,9 +253,12 @@ function slowFadeInWithTimer(elementClass, num) {
     const elements = document.getElementsByClassName(elementClass);
     for (let i = 0; i < elements.length; i++) {
         let element = elements[i];
+        element.style.color = "#11151c";
         element.style.opacity = "0";
+
         setTimeout(() => {
-            elements[i].style.opacity = "1";
+            elements[i].style.color = "#f5f5f5";
+            element.style.opacity = "1";
         }, num);
     }
 }
@@ -264,7 +267,7 @@ function slowFadeInWithTimer(elementClass, num) {
 document.addEventListener('DOMContentLoaded', () => {
     scrollToSection();
     renderLogos();
-    // slowFadeInWithTimer('large_header_text', 500);
-    // slowFadeInWithTimer('slow_fade_in', 1500);
-    // slowFadeInWithTimer('header_sub_text_slow_fade', 2500);
+    slowFadeInWithTimer('large_header_text', 500);
+    slowFadeInWithTimer('slow_fade_in', 1500);
+    slowFadeInWithTimer('header_sub_text_slow_fade', 2500);
 });
