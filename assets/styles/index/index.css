@@ -556,6 +556,7 @@ card a:active {
 #video_wrapper {
     position: relative;
     padding-bottom: 56.25%;
+    border-radius: 6px;
 }
 
 #video_wrapper iframe {
@@ -564,6 +565,7 @@ card a:active {
     height: 100%;
     top: 0;
     left: 0;
+    border-radius: 6px;
 }
 
 .project_text_content {
