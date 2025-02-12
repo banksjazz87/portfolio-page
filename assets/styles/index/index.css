@@ -553,6 +553,19 @@ card a:active {
     margin-top: 20px;
 }
 
+#video_wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+#video_wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
 .project_text_content {
     width: 100%;
 }
