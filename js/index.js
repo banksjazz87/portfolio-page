@@ -98,8 +98,7 @@ menuItems.addEventListener('click', () => {
     const nav = document.querySelector('navbar');
     clearInterval(scrollOut);
     menuItems.style.display = 'none';
-    toggleItemDisplay("close_mobile_menu");
-    toggleItemDisplay('menu_container');
+    hideMenu();
 });
 
 
@@ -123,13 +122,11 @@ function scrollToSection() {
                 targetElement.scrollIntoView({
                     behavior: "smooth"
                 });
-                hideMenu();
 
             } else {
                 targetId = targetId[0].toLowerCase();
                 targetElement = document.getElementById(targetId);
                 targetElement.scrollIntoView({ behavior: "smooth" });
-                hideMenu();
             }
         })
     }
