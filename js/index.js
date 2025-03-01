@@ -98,6 +98,8 @@ menuItems.addEventListener('click', () => {
     const nav = document.querySelector('navbar');
     clearInterval(scrollOut);
     menuItems.style.display = 'none';
+    toggleItemDisplay("close_mobile_menu");
+    toggleItemDisplay('menu_container');
 });
 
 

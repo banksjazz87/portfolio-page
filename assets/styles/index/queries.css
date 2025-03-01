@@ -1,79 +1,93 @@
-   @media (min-width: 767px) {
-       #menu_items {
-           display: flex;
-       }
-       #menu_container {
-           display: none;
-       }
-   }
-   
-   @media (max-width: 1024px) {
-       #header_sub_text {
-           bottom: 10%;
-       }
-   }
-   
-   @media (max-width: 767px) {
-       html,
-       body {
-           overflow-x: hidden;
-       }
-       #opening_text {
-           font-size: 14px;
-           padding-left: 20px;
-           padding-right: 20px;
-       }
-       #main_header,
-       .large_header_text {
-           font-size: 3.5em;
-       }
-       #opening_text p {
-           font-size: 1.5em;
-       }
-       #header_sub_text p {
-           font-size: 1.25em;
-       }
-       body p {
-           font-size: 16px;
-       }
-       #menu_items {
-           display: none;
-       }
-       #menu_container {
-           display: flex;
-       }
-       .dark_tile,
-       .light_tile {
-           width: 100%;
-           flex: 0;
-           max-width: 90%;
-       }
-       #about,
-       .about_tiles,
-       .card_wrapper {
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-       }
-       #projects {
-           margin: auto;
-       }
-       .project_links {
-           display: flex;
-           flex-direction: row;
-           flex-wrap: wrap;
-           column-gap: 10px;
-           row-gap: 10px;
-           width: 100%;
-       }
-       .project_links a {
-           text-align: center;
-           width: 100%;
-       }
-       #mobile_menu_items {
-           max-width: unset;
-       }
-       .logo_item {
-           width: 40%;
-       }
-   }
+@media (min-width: 767px) {
+	navbar {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+        width: 100%;
+	}
+	#menu_items {
+		display: flex;
+	}
+	#menu_container {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	#header_sub_text {
+		bottom: 10%;
+	}
+}
+
+@media (max-width: 767px) {
+	html,
+	body {
+		overflow-x: hidden;
+	}
+	#opening_text {
+		font-size: 14px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#main_header,
+	.large_header_text {
+		font-size: 3.5em;
+	}
+	#opening_text p {
+		font-size: 1.5em;
+	}
+	#header_sub_text p {
+		font-size: 1.25em;
+	}
+	body p {
+		font-size: 16px;
+	}
+	#menu_items {
+		display: none;
+	}
+	#menu_container {
+		display: flex;
+	}
+	.dark_tile,
+	.light_tile {
+		width: 100%;
+		flex: 0;
+		max-width: 90%;
+	}
+	#about,
+	.about_tiles,
+	.card_wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#projects {
+		margin: auto;
+	}
+	.project_links {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		column-gap: 10px;
+		row-gap: 10px;
+		width: 100%;
+	}
+	.project_links a {
+		text-align: center;
+		width: 100%;
+	}
+	#mobile_menu_items {
+		max-width: unset;
+	}
+	.logo_item {
+		width: 40%;
+	}
+
+    #nav_social_links {
+        position: absolute;
+        padding-right: 0px;
+        right: .8em;
+        top: 25%;
+    }
+}

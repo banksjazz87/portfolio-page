@@ -43,8 +43,12 @@ h4 {
     font-weight: 600;
 }
 
-#inner_page_container {
+main {
     max-width: 1280px;
+}
+
+#inner_page_container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +57,7 @@ h4 {
 }
 
 navbar {
-    width: 100vw;
+    width: 100%;
     padding-top: .5em;
     padding-bottom: .5em;
     margin-top: 0;
@@ -128,10 +132,10 @@ navbar {
 }
 
 #menu_items {
-    position: absolute;
+    /* position: absolute;
     right: 0;
     top: 30%;
-    right: 5%;
+    right: 5%; */
 }
 
 #menu_items li {
@@ -169,11 +173,24 @@ navbar a {
     flex-direction: row;
     column-gap: 30px;
     list-style-type: none;
+    padding-left: 40px;
 }
 
 #desktop_menu_items li::before {
     content: '';
 }
+
+#desktop_menu_items a {
+    transition: all .4s ease-in-out;
+}
+
+#nav_social_links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    padding-right: 40px;
+}
+
 
 .dash {
     background-color: white;
@@ -633,10 +650,11 @@ footer a {
     text-decoration: none;
 }
 
+
 #social_links {
     padding-bottom: 1em;
     padding-top: 1em;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     background-color: #364156;
@@ -646,12 +664,14 @@ footer a {
 }
 
 
-#social_links i {
+#social_links i, 
+#nav_social_links i {
     color: #f5f5f5;
     font-size: 28px;
     transition: all .4s ease-in-out;
 }
 
-#social_links i:hover {
+#social_links i:hover, 
+#nav_social_links i:hover {
     color: #d66853;
 }
