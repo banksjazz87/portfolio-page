@@ -56,11 +56,15 @@
 		max-width: 90%;
 	}
 	#about,
-	.about_tiles,
 	.card_wrapper {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+	
+	.about_tiles {
+		display: grid;
+		grid-template-columns: 1fr;
 	}
 	#projects {
 		margin: auto;
