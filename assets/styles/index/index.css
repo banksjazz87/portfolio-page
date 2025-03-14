@@ -348,10 +348,8 @@ navbar a {
 }
 
 .about_tiles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
     column-gap: 2rem;
     color: #1f1f1f;
@@ -408,8 +406,8 @@ li::before {
     row-gap: 0;
 }
 
-#projects {
-    display: flex;
+.project_section {
+     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-left: 2vw;
@@ -444,7 +442,6 @@ li::before {
     padding: 0 1em 2em 1em;
     flex: 1;
     color: #1f1f1f;
-    max-width: 500px;
 }
 
 .light_tile h3 {
@@ -458,7 +455,7 @@ li::before {
 }
 
 .inner_tile {
-    margin: 0 1em 2em 1em;
+    padding: 0px 20px;
 }
 
 .logo_image {
@@ -595,7 +592,12 @@ card a:active {
     margin-bottom: 0;
 }
 
-#project_header {
+.card_bottom a {
+    width: 180px;
+    text-align: center;
+}
+
+.project_header {
     text-align: center;
 }
 
